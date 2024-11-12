@@ -1,0 +1,334 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#main-container {
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+header .hero-image {
+    background: url('https://bogatyr.club/uploads/posts/2023-03/1678887157_bogatyr-club-p-zadnii-fon-kukhnya-foni-vkontakte-1.jpg') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header .overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#search-button, #favorites-button {
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#search-button:hover, #favorites-button:hover {
+    background-color: #ff4500;
+}
+
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe-card {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.recipe-card-inner {
+    padding: 10px;
+}
+
+.recipe-card h3 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.recipe-card p {
+    font-size: 0.9em;
+    margin: 0 auto;
+    color: #555;
+}
+
+.recipe-card .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+    gap: 10px;
+}
+
+.recipe-card button {
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.recipe-card button:hover {
+    background-color: #ff4500;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    overflow-y: auto;
+    max-height: 80vh;
+    text-align: left;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.modal-content ul {
+    margin: 20px 0;
+}
+
+.modal-content ul li {
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.recipe-card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.suggestions {
+    position: absolute;
+    background: #ffffff;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+    color: #000;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f5f5f5;
+}
+
+
+@media (max-width: 768px) {
+    .recipe-card {
+        height: auto;
+    }
+}
+
+.recipe-card {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.recipe-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.recipe-card-front img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.recipe-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.recipe-button, .favourite-button {
+    padding: 8px 16px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.recipe-button:hover, .favourite-button:hover {
+    background-color: #ff4500;
+}
+
+.button-container .recipe-button {
+    width: 45%;
+}
+
+.button-container .favourite-button {
+    width: 45%;
+}
+
+@media (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #search-bar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #search-button, #favorites-button {
+        width: 100%;
+    }
+}
