@@ -19,16 +19,16 @@ The Recipe App is a simple and interactive web application that allows users to 
 
 ## Screenshots
 ### Главный экран
-![Home Screen](screenshots/recipe-app/main-page.png)
+![Image](screenshots/recipe-app/main-page.png)
 
 ### Детальный рецепт
-![Search Recipes](screenshots/recipe-app/recipe-details.png)
+![Image](screenshots/recipe-app/recipe-details.png)
 
 ### Автозаполнение
-![Search Recipes](screenshots/recipe-app/auto-suggestion.png)
+![Image](screenshots/recipe-app/auto-suggestion.png)
 
 ### Адаптивный экран
-![Search Recipes](screenshots/recipe-app/media-screen.png)
+![Image](screenshots/recipe-app/media-screen.png)
 
 
 
@@ -54,20 +54,20 @@ The Movies App is a web application that allows users to search for movie inform
 
 ## Screenshots
 ### Главный экран
-![Home Screen](screenshots/movies-app/main-page.png)
+![Image](screenshots/movies-app/main-page.png)
 
 ### Детальная информация о фильме
-![Search Recipes](screenshots/movies-app/movie-details-1.png)
-![Search Recipes](screenshots/movies-app/movie-details-2.png)
+![Image](screenshots/movies-app/movie-details-1.png)
+![Image](screenshots/movies-app/movie-details-2.png)
 
 ### Автозаполнение
-![Search Recipes](screenshots/movies-app/auto-suggestion.png)
+![Image](screenshots/movies-app/auto-suggestion.png)
 
 ### Избранное
-![Search Recipes](screenshots/movies-app/watchlist.png)
+![Image](screenshots/movies-app/watchlist.png)
 
 ### Адаптивный экран
-![Search Recipes](screenshots/movies-app/adaptiv.png)
+![Image](screenshots/movies-app/adaptiv.png)
 
 
 
@@ -93,15 +93,15 @@ The Weather App is a web application that allows users to get current weather in
 
 ## Screenshots
 ### Главный экран
-![Home Screen](screenshots/weather-app/main-page.png)
+![Image](screenshots/weather-app/main-page.png)
 
 ### Автозаполнение
-![Search Recipes](screenshots/weather-app/auto-suggestion.png)
+![Image](screenshots/weather-app/auto-suggestion.png)
 
 ### Прогноз погоды
-![Search Recipes](screenshots/weather-app/5-day-forecast-F.png)
+![Image](screenshots/weather-app/5-day-forecast-F.png)
 
 ### Адаптивный экран
-![Search Recipes](screenshots/weather-app/adaptiv.png)
+![Image](screenshots/weather-app/adaptiv.png)
 
 
